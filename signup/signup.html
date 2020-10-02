@@ -1,0 +1,33 @@
+<html lang="en" dir="ltr"><head>
+    <meta charset="utf-8">
+    <title>article_list</title>
+    <link rel="stylesheet" href="/assets/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1><a href="/articles/"><img src="/assets/logo.png" class="img2"></a></h1>
+      <nav>
+        <ul>
+          <li>
+            <form class="logout-link" action="/accounts/logout" method="post">
+              <input type="hidden" name="csrfmiddlewaretoken" value="duIxSloT0GLYDXD9ZMMSnuBkMavesntXAxCuTmPP48g1EvdJfXNzgNqm5YdIWHhz">
+              <button type="submit">Logout</button>
+
+            </form>
+          </li>
+        </ul>
+      </nav>
+      
+  <h1>Signup</h1>
+  <form class="site-form" action="/accounts/signup" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="duIxSloT0GLYDXD9ZMMSnuBkMavesntXAxCuTmPP48g1EvdJfXNzgNqm5YdIWHhz">
+    <label for="id_username">Username:</label><input type="text" name="username" maxlength="150" autocapitalize="none" autocomplete="username" autofocus="" required="" id="id_username"><br><span class="helptext">Required. 150 characters or fewer. Letters, digits and @/./+/-/_ only.</span>
+<label for="id_password1">Password:</label><input type="password" name="password1" autocomplete="new-password" required="" id="id_password1"><br><span class="helptext"><ul><li>Your password can’t be too similar to your other personal information.</li><li>Your password must contain at least 8 characters.</li><li>Your password can’t be a commonly used password.</li><li>Your password can’t be entirely numeric.</li></ul></span>
+<label for="id_password2">Password confirmation:</label><input type="password" name="password2" autocomplete="new-password" required="" id="id_password2"><br><span class="helptext">Enter the same password as before, for verification.</span>
+    <input type="submit" value="Signup">
+  </form>
+
+    </div>
+  
+
+</body></html>
