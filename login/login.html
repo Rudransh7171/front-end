@@ -9,19 +9,22 @@
   <h1>Login</h1>
 
   <form class="site-form" action="/accounts/login" method="post">
-    <input type="hidden" name="csrfmiddlewaretoken" value="uR6UxWaQ5nGAhAxk3WQODlYfyL11kq8NLa7orscu9h58hjzOTTPZXhfTM05XEhCE">
-    <br>
-    <label for="id_username">Username:</label>
-    <input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
-    <br>
 
-<label for="id_password">Password:</label>
-<input type="password" name="password" autocomplete="current-password" required="" id="id_password">
-<br>
+    <input type="hidden" name="csrfmiddlewaretoken" value="IAIQ55P0MddXXyycXLgqgOqF3Z5KmUEuZTJkZBREQ7CvXhAGNIfBAKHjhe9GGL8l">
+    <label for="id_username">Username:</label><ul class="errorlist"><li>This field is required.</li></ul><input type="text" name="username" autofocus="" autocapitalize="none" autocomplete="username" maxlength="150" required="" id="id_username">
+<label for="id_password">Password:</label><ul class="errorlist"><li>This field is required.</li></ul><input type="password" name="password" autocomplete="current-password" required="" id="id_password">
     
     <input type="submit" value="Login">
   </form>
-  </div>
+  <p>Don't have an account?</p>
+  <form class="wel-signup" action="/accounts/signup" method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="IAIQ55P0MddXXyycXLgqgOqF3Z5KmUEuZTJkZBREQ7CvXhAGNIfBAKHjhe9GGL8l">
+
+    <input type="submit" value="Signup">
+
+  </form>
+  
+
 
 
 </body>
