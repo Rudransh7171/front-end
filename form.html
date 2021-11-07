@@ -8,7 +8,7 @@ body {
 
 h1 {
   color: BLack;
-  font-family:Lucida Console;
+
 
   text-align: center;
 }
@@ -17,19 +17,21 @@ p {
   font-family: verdana;
   font-size: 20px;
 }
-input[name=name]
+
+input[name=Form]
 {
 	border: 2px;
 	border-radius: 10px;
-    padding: 2px 12px;
-    margin: 12px 25px;
+ 	padding: 5px 10px;
+  	margin: 12px;
+
     transition: border-radius 0.4s ease-in-out;
+
     transition: background-color 0.4s ease-in-out;
     transition: padding 0.4s ease-in-out;
 
-
 }
-input[name=name]:focus
+input[name=Form]:focus
 {
 
 	border-radius: 15px;
@@ -39,84 +41,10 @@ input[name=name]:focus
 
 
 }
-input[name=age]
-{
-	border: 2px;
-	border-radius: 10px;
-    padding: 2px 12px;
-    margin: 12px 25px 12px 35px;
-    transition: border-radius 0.4s ease-in-out;
-
-    transition: background-color 0.4s ease-in-out;
-    transition: padding 0.4s ease-in-out;
-
-}
-input[name=age]:focus
-{
-
-	border-radius: 15px;
-    padding: 4px 24px;
-    background-color: black;
-    color: white;
 
 
-}
-input[type=radio]
-{
-	border: 2px;
-	border-radius: 10px;
-    padding: 2px 12px;
-    margin: 12px 15px 12px 2px;
-    transition: border-radius 0.4s ease-in-out;
-
-    transition: background-color 0.4s ease-in-out;
-    transition: padding 0.4s ease-in-out;
-
-}
-input[type=tel]
-{
-	border: 2px;
-	border-radius: 10px;
-    padding: 2px 12px;
-    margin: 12px 10px 12px 15px;
-    transition: border-radius 0.4s ease-in-out;
-
-    transition: background-color 0.4s ease-in-out;
-    transition: padding 0.4s ease-in-out;
-
-}
-input[type=tel]:focus
-{
-
-	border-radius: 15px;
-    padding: 4px 24px;
-    background-color: black;
-    color: white;
 
 
-}
-input[type=email]
-{
-	border: 2px;
-	border-radius: 10px;
-    padding: 2px 12px;
-    margin: 12px 15px 12px 40px;
-    transition: border-radius 0.4s ease-in-out;
-
-    transition: background-color 0.4s ease-in-out;
-    transition: padding 0.4s ease-in-out;
-
-}
-input[type=email]:focus
-{
-
-	border-radius: 15px;
-    padding: 4px 24px;
-    background-color: black;
-    color: white;
-
-
-}
 input[type=submit]
 {
 	color:white;
@@ -125,42 +53,74 @@ input[type=submit]
     border-radius: 10px;
     padding: 12px 12px;
 
+
 }
-div
+input[type=reset]
+{
+	color:white;
+    background-color: black;
+    border: 2px;
+    border-radius: 10px;
+    padding: 12px 12px;
+
+}
+.formbox
 {
   font-family:Lucida Console;
 
 	background-color: grey;
     padding: 24px 24px;
+    margin: 12px 500px;
+    border-radius: 22px;
 }
+label{
+  width: 100px;
+  display: inline-block;
+
+}
+
+.box{
+
+	margin: -12px 0px 12px 125px;
+}
+
+
 </style>
 </head>
 <body>
 
 <h1>Simple Form</h1>
-<div>
-<form align="center">
+<div class="formbox">
+<form >
 <label>Name</label>
-<input type ="text" name="name" placeholder="Enter Your Name" required>
+<input type ="text" name="Form" placeholder="Enter Your Name" maxlength="2" required>
 <br>
 <label>Age</label>
-<input type="number" name ="age" placeholder="Enter Your Age" required>
+<input type="number"  name ="Form"   min="18" max="60" required />
 <br>
-<label>Gender</label>
-<input type="radio" name="gender"  required>
+<label style="margin: 12px 0px 0px 0px;">Gender</label>
+<div class="box">
+<input type="radio" name="gender" required>
 <label>Male</label>
+<br>
 <input type="radio" name="gender"  required>
 <label>Female</label>
-<input type="radio" name="gender"  required>
+<br>
+<input type="radio" name="gender"required>
 <label>Others</label>
+</div>
+
 <br>
 <label>Phone No.</label>
-<input type="tel" pattern=[0-9]{10} placeholder="Enter Your Number" required>
+<input type="tel" name="Form" pattern=[0-9]{10} placeholder="Enter Your Number" required>
 <br>
 <label>Email</label>
-<input type="email" name="email" placeholder="Enter Your Email" required>
+<input type="email" name="Form" placeholder="Enter Your Email" required>
 <br><br>
-<input type="submit">
+<div style="text-align:center;">
+    <input type="submit" >
+   	<input type ="reset">
+</div>
 </form>
 </div>
 
