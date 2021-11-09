@@ -1,0 +1,119 @@
+.box
+{
+
+  background-color: #a2725d;
+  position: relative;
+  padding-top: 200px;
+
+
+
+}
+body{
+  margin: 0;
+  text-align: center;
+
+
+}
+h1
+{
+  font-size: 90px;
+  margin: 50px auto 0px auto;
+  font-family: 'Dancing Script', cursive;
+}
+.middlecont{
+
+
+  background-color: white;
+  margin: 4px auto 0 auto;
+
+}
+.bottomcont
+{
+
+  background-color: #f7e4d7;
+  margin-bottom: -18px;
+
+}
+
+
+.mount{
+  max-width: 100%
+
+
+}
+.bottom-cloud
+{
+  max-width: 10%;
+
+  position: absolute;
+  top: 100px;
+  left: 200px;
+
+}
+.top-cloud
+{
+  max-width: 20%;
+  position: absolute;
+  right: 200px;
+  top: 100px;
+}
+p{
+  font-family: sans-serif ;
+  font-size: 20px;
+}
+.Rudra
+{
+  height: 200px;
+   width: 200px;
+   border-radius: 400px;
+}
+.skill
+{
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+h2
+{
+  font-family: cursive;
+  color: brown;
+
+}
+h3
+{
+  color: brown;
+}
+.meat
+{
+
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+
+}
+.myskills
+{
+  width: 50%;
+  margin: 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+.normal
+{
+
+  font-family: serif;
+  font-weight: normal;
+  font-size: 3em;
+  color: brown;
+}
+hr
+{
+  border: dotted 6px;
+  border-bottom: none;
+  width: 4%;
+  color: #d59667;
+
+}
+ .bottomcont h2{
+  margin: 50px auto 50px auto;
+}
